@@ -16,10 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from home import views
+from maps import views as mapsviews
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home', views.index),
     path('', views.index),
     path('index01', views.index01),
-    path('index02', views.index02)
+    path('index02', views.index02),
+    path('maps/home', mapsviews.home),
 ]
