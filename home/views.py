@@ -8,7 +8,7 @@ def index(request):
     if path == '/home':
         resultstr = '<h1>여기는 home 입니다.</h1>'
     else :
-        resultstr = '<h1>여기는 mater 입니다.</h1>'
+        resultstr = '<h1>여기는 오상훈 입니다.</h1>'
 
     return HttpResponse(resultstr)
 
