@@ -17,5 +17,7 @@ def index01(request):
     return render(request, 'index.html', context=result)
 
 def index02(request):
-    result = {'first':request.GET['first'],'second':request.GET['second']}
-    return render(request, 'index.html', context=result)
+    # result = {'first':request.GET['first'],'second':request.GET['second']}
+    first = request.GET['first']
+    second = request.GET['second']
+    return render(request, 'index_copy.html')
