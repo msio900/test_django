@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>Members</h2>
+    <table border="1">
+        <!-- header -->
+        <tr>
+            <th>username</th>
+            <th>email</th>
+        </tr>
+        <!-- contents -->
+        {% for row in members %}
+        <tr>
+            <td>{{ row.username }}</td>
+            <td>{{ row.email }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <h2>economics</h2>
+    <table border="1">
+        <!-- header -->
+        <tr>
+            <th>Title</th>
+            <th>Link</th>
+        </tr>
+        <!-- content -->
+        {% for row in erows %}
+        <tr>
+            <td>{{ row.title }}</td>
+            <td>{{ row.href }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
