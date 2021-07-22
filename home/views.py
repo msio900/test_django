@@ -18,10 +18,11 @@ def index01(request):
 
 def index02(request):
     # result = {'first':request.GET['first'],'second':request.GET['second']}
-    first = request.GET['first']
-    second = request.GET['second']
+    # first = request.GET['first']
+    # second = request.GET['second']
     return render(request, 'index_copy.html')
 
+import requests
 def index03(request):
     # conn = sqlite3.connect('db.sqlite3')
     # query = 'CREATE TABLE economic (title TEXT, link TEXT, create_date datetime)'

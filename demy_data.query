@@ -1,0 +1,19 @@
+drop table ...
+create table ...
+insert into polls_economics (create_date,href,title)
+values (':create_date',':href',':title');
+insert into polls_economics (create_date,href,title)
+values (':create_date02',':href02',':title02');
+insert into polls_economics (create_date,href,title)
+values (':create_date',':href',':title');
+insert into polls_economics (create_date,href,title)
+values (':create_date',':href',':title');
+insert into polls_economics (create_date,href,title)
+values (':create_date',':href',':title');
+insert into polls_economics (create_date,href,title)
+values (':create_date',':href',':title');
+insert into polls_economics (create_date,href,title)
+values (':create_date',':href',':title');
+insert into polls_economics (create_date,href,title)
+values (':create_date',':href',':title');
+
