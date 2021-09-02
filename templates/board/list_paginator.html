@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<body>
+<div class="container">
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>title</th>
+                <th>links</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in page_obj %}
+            <tr>
+                <td>{{ row.title }}</td>
+                <td>{{ row.href }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <ul class="pagination">
+        <li class="page-item active"><a class="page-link" href="#">Page {{ page_obj.number }}  of {{ paginator.num_pages }}</a></li>
+        <li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}">Next</a></li>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
