@@ -28,6 +28,7 @@ if res.status_code == 200:
             pass
 
     connect.commit()
+    connect.close()
 
 
 
