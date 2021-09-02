@@ -23,6 +23,7 @@ def index02(request):
     return render(request, 'index_copy.html')
 
 import requests
+
 def index03(request):
     # conn = sqlite3.connect('db.sqlite3')
     # query = 'CREATE TABLE economic (title TEXT, link TEXT, create_date datetime)'
